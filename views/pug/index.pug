@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Home
+    link(rel='icon', href='/favicon.ico')
+    link(rel='stylesheet', href='style.css')
+  body
+    h1 Home Page
+    nav
+      a(href='/users') Users
+      a(href='/articles') Articles
+    form(action='/login', method='post')
+      input(type='email', name='email', placeholder='Email')
+      input(type='password', name='password', placeholder='Password')
+      button(type='submit') Login
+    form(action='/register', method='post')
+      input(type='text', name='name', placeholder='Name')
+      input(type='email', name='email', placeholder='Email')
+      input(type='password', name='password', placeholder='Password')
+      button(type='submit') Register
+    form(action='/theme', method='post')
+      select(name='theme')
+        option(value='light') Light
+        option(value='dark') Dark
+      button(type='submit') Save Theme

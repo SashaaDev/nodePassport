@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Users
+    link(rel='icon', href='/favicon.ico')
+    link(rel='stylesheet', href='style.css')
+
+  body
+    h1 Users
+    ul
+      each user in users
+        li
+          a(href=`/users/${user.id}`) #{user.name}
